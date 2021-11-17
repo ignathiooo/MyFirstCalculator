@@ -1,9 +1,14 @@
 
     function add(){
+        if (input1 !== '' && input2 !== ''){
         const input1 = parseFloat(document.querySelector('#value1').value);
         const input2 = parseFloat(document.querySelector('#value2').value);
         const result = input1 + input2;
         document.querySelector('#result').innerHTML = result;
+        }
+        else {
+        document.querySelector('#result').innerHTML = 0;   
+        
     }
     document.querySelector('#ADD').addEventListener('click',add);
     
